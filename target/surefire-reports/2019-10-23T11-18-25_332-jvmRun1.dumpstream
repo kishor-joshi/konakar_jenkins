@@ -1,0 +1,145 @@
+# Created at 2019-10-23T11:19:27.853
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created at 2019-10-23T11:19:35.053
+Unexpected IOException with stream: 2019-10-23 11:19:35 INFO  ItemMessageValidation:41 - search result passed:displayed product nameis : Windows 8
+
+
+# Created at 2019-10-23T11:19:35.055
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:35.464
+Unexpected IOException with stream: 2019-10-23 11:19:35 INFO  ItemMessageValidation:41 - search result passed:displayed product nameis : Windows 8
+
+
+# Created at 2019-10-23T11:19:35.466
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:35.697
+Unexpected IOException with stream: 2019-10-23 11:19:35 INFO  BaseClass:38 - product Name is: Acctim Metal Clock dropDownText is: DVD Movies
+
+
+# Created at 2019-10-23T11:19:36.188
+Unexpected IOException with stream: 2019-10-23 11:19:36 INFO  BaseClass:38 - product Name is: Acctim Metal Clock dropDownText is: DVD Movies
+
+
+# Created at 2019-10-23T11:19:39.495
+Unexpected IOException: 6,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+
+# Created at 2019-10-23T11:19:39.641
+Unexpected IOException with stream: 2019-10-23 11:19:39 INFO  ItemMessageValidation:33 - displayed error message is correct and message is: There are no available products.
+
+
+# Created at 2019-10-23T11:19:39.643
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:40.101
+Unexpected IOException: 6,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+
+# Created at 2019-10-23T11:19:40.213
+Unexpected IOException with stream: 2019-10-23 11:19:40 INFO  ItemMessageValidation:33 - displayed error message is correct and message is: There are no available products.
+
+
+# Created at 2019-10-23T11:19:40.215
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:40.325
+Unexpected IOException with stream: 2019-10-23 11:19:40 INFO  BaseClass:38 - product Name is: Acctim Metal Clock dropDownText is: Home & Garden
+
+
+# Created at 2019-10-23T11:19:40.825
+Unexpected IOException with stream: 2019-10-23 11:19:40 INFO  BaseClass:38 - product Name is: Acctim Metal Clock dropDownText is: Home & Garden
+
+
+# Created at 2019-10-23T11:19:42.099
+Unexpected IOException: 8,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,null,null,null,SearchProductScenario.OutComeOfSearch:50 \00BB ConcurrentModification,java.util.ConcurrentModificationException\000A\0009at com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch(SearchProductScenario.java:50)\000A
+
+
+# Created at 2019-10-23T11:19:42.657
+Unexpected IOException: 6,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+
+# Created at 2019-10-23T11:19:56.238
+Unexpected IOException with stream: 2019-10-23 11:19:56 INFO  ItemMessageValidation:41 - search result passed:displayed product nameis : Acctim Metal Clock
+
+
+# Created at 2019-10-23T11:19:56.240
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:56.745
+Unexpected IOException with stream: 2019-10-23 11:19:56 INFO  BaseClass:38 - product Name is: Windows 8 dropDownText is: All
+
+
+# Created at 2019-10-23T11:19:56.926
+Unexpected IOException: 8,1,com.konakart.testscenarios.SearchProductScenario,message(com.konakart.testscenarios.SearchProductScenario),null,reuslt not matched expected [Windows 8] but found [Acctim Metal Clock],null,reuslt not matched expected [Windows 8] but found [Acctim Metal Clock],SearchProductScenario.message:60 reuslt not matched expected [Windows 8] but found [Acctim Metal Clock],java.lang.AssertionError: reuslt not matched expected [Windows 8] but found [Acctim Metal Clock]\000A\0009at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)\000A
+
+
+# Created at 2019-10-23T11:19:56.928
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:56.929
+Unexpected IOException: 9,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,reuslt not matched expected [Windows 8] but found [Acctim Metal Clock],null
+
+
+# Created at 2019-10-23T11:19:56.930
+Unexpected IOException: 9,1,com.konakart.testscenarios.SearchProductScenario,message(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+
+# Created at 2019-10-23T11:19:56.931
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:56.932
+Unexpected IOException: 9,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,reuslt not matched expected [Windows 8] but found [Acctim Metal Clock],null
+
+
+# Created at 2019-10-23T11:19:56.934
+Unexpected IOException: 9,1,com.konakart.testscenarios.SearchProductScenario,message(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+
+# Created at 2019-10-23T11:19:56.935
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:19:56.936
+Unexpected IOException: 9,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,reuslt not matched expected [Windows 8] but found [Acctim Metal Clock],null
+
+
+# Created at 2019-10-23T11:19:56.937
+Unexpected IOException: 9,1,com.konakart.testscenarios.SearchProductScenario,message(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+
+# Created at 2019-10-23T11:19:59.001
+Unexpected IOException: 6,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+
+# Created at 2019-10-23T11:20:13.356
+Unexpected IOException with stream: 2019-10-23 11:20:13 INFO  ItemMessageValidation:41 - search result passed:displayed product nameis : Windows 8
+
+
+# Created at 2019-10-23T11:20:13.357
+Unexpected IOException: 5,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),com.konakart.testscenarios.SearchProductScenario,null,null
+
+
+# Created at 2019-10-23T11:20:14.051
+Unexpected IOException with stream: 2019-10-23 11:20:14 INFO  BaseClass:38 - product Name is: The Matrix dropDownText is: DVD Movies
+
+
+# Created at 2019-10-23T11:20:16.336
+Unexpected IOException: 6,1,com.konakart.testscenarios.SearchProductScenario,OutComeOfSearch(com.konakart.testscenarios.SearchProductScenario),null,null,null
+
+

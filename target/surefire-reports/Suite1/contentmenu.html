@@ -1,0 +1,532 @@
+<html>
+<head>
+<title>TestNG:  contentmenu</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>contentmenu</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/5</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 22 14:42:04 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>64 seconds (64072 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.message()'><b>message</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td><div><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace828713035", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace828713035'><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>14</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.message()'><b>message</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td></td>
+<td>-1571735588</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.message()'><b>message</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td></td>
+<td>-1571735588</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.message()'><b>message</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td></td>
+<td>-1571735588</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.message()'><b>message</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td></td>
+<td>-1571735588</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.message()'><b>message</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td></td>
+<td>-1571735588</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: Computer Peripherals, Bundle Saver, Bundle Saver</td>
+<td><div><pre>java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1542)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at com.konakart.utility.KonakartExtendReport.reportLog(KonakartExtendReport.java:24)
+	at com.konakart.script.QuickSearchPage.searchProduct(QuickSearchPage.java:40)
+	at com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch(SearchProductScenario.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace289417436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace289417436'><pre>java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1542)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at com.konakart.utility.KonakartExtendReport.reportLog(KonakartExtendReport.java:24)
+	at com.konakart.script.QuickSearchPage.searchProduct(QuickSearchPage.java:40)
+	at com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch(SearchProductScenario.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>6</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: Computer Peripherals, Bundle Saver, Bundle Saver</td>
+<td></td>
+<td>6</td>
+<td>com.konakart.testscenarios.SearchProductScenario@3ba9ad43</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: Software, Windows 8, Windows 8</td>
+<td></td>
+<td>3</td>
+<td>com.konakart.testscenarios.SearchProductScenario@3ba9ad43</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: Software, Windows 8, Windows 8</td>
+<td></td>
+<td>3</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: DVD Movies, Acctim Metal Clock, There are no available products.</td>
+<td></td>
+<td>3</td>
+<td>com.konakart.testscenarios.SearchProductScenario@3ba9ad43</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: Home & Garden, Acctim Metal Clock, Acctim Metal Clock</td>
+<td></td>
+<td>3</td>
+<td>com.konakart.testscenarios.SearchProductScenario@3ba9ad43</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: All, Windows 8, Windows 8</td>
+<td></td>
+<td>3</td>
+<td>com.konakart.testscenarios.SearchProductScenario@3ba9ad43</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: DVD Movies, The Matrix, The Matrix</td>
+<td></td>
+<td>2</td>
+<td>com.konakart.testscenarios.SearchProductScenario@3ba9ad43</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario<br>Parameters: Computer Peripherals, Windows 8, There are no available products.</td>
+<td></td>
+<td>3</td>
+<td>com.konakart.testscenarios.SearchProductScenario@3ba9ad43</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td><div><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace755781600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace755781600'><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>0</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td><div><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace360566177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace360566177'><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>0</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td><div><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1024874593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1024874593'><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>0</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td><div><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1565341357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565341357'><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>0</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+<tr>
+<td title='com.konakart.testscenarios.SearchProductScenario.OutComeOfSearch()'><b>OutComeOfSearch</b><br>Test class: com.konakart.testscenarios.SearchProductScenario</td>
+<td><div><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1934162830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1934162830'><pre>java.lang.AssertionError: reuslt not matched expected [There are no available products.] but found [Windows 8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.konakart.validationHelper.ItemMessageValidation.searchResultValidation(ItemMessageValidation.java:40)
+	at com.konakart.script.QuickSearchPage.getItemMessage(QuickSearchPage.java:69)
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>0</td>
+<td>com.konakart.testscenarios.SearchProductScenario@9353778</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 1, Errors: 0, Skipped: 12, Time elapsed: 111.967 s <<< FAILURE! - in TestSuite
+message(com.konakart.testscenarios.SearchProductScenario)  Time elapsed: 4.633 s  <<< FAILURE!
+java.lang.AssertionError: reuslt not matched expected [Windows 8] but found [Bundle Saver]
+	at com.konakart.testscenarios.SearchProductScenario.message(SearchProductScenario.java:60)
+
