@@ -6,14 +6,14 @@
   <test name="firefox" thread-count="5" >
   <parameter name="browserType" value="firefox" />
 	 <classes >
-	 <class name="com.konakart.testscenarios.SearchProductScenario"/>
+	 <class name="com.konakart.testscenarios.SpecificProductValidationScenario"/>
 	 </classes>
    </test>
    
   <test name="IE" thread-count="5" >
   <parameter name="browserType" value="ie" />
      <classes>
-       <class name="com.konakart.testscenarios.SearchProductScenario"/>
+       <class name="com.konakart.testscenarios.SpecificProductValidationScenario"/>
      </classes>
    </test>
 </suite> <!-- Suite1 -->
